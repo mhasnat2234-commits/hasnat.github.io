@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muhammad Hasnat | Computational Bioinformatician</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f7fa;--ink:#10213f;--mute:#56647c;--line:#d5dde8;--acc:#0b7a75;--hi:#c2410c;--card:#fff;--bar:rgba(244,247,250,.9);--d:'Bricolage Grotesque',system-ui,sans-serif;--s:'IBM Plex Sans',system-ui,sans-serif;--m:'IBM Plex Mono',monospace;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1428;--ink:#e8eef8;--mute:#9aa8c2;--line:#26365a;--acc:#4fd1c5;--hi:#fb923c;--card:#12203d;--bar:rgba(11,20,40,.9)}}
+:root[data-theme="dark"]{--bg:#0b1428;--ink:#e8eef8;--mute:#9aa8c2;--line:#26365a;--acc:#4fd1c5;--hi:#fb923c;--card:#12203d;--bar:rgba(11,20,40,.9)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 var(--s);overflow-x:hidden}
+a{color:var(--acc)}a:focus-visible,button:focus-visible{outline:3px solid var(--hi);outline-offset:3px}
+h1,h2,h3{font-family:var(--d);line-height:1.12;margin:0}.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+#pg{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:3px;width:0;background:linear-gradient(90deg,var(--acc),var(--hi));z-index:60}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--bar);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:18px;height:60px}.brand{font:700 1.05rem var(--d);text-decoration:none;color:var(--ink);white-space:nowrap}
+nav{display:flex;gap:20px;margin-left:auto;font-size:.88rem;overflow-x:auto}nav a{color:var(--mute);text-decoration:none;white-space:nowrap;padding:4px 0;border-bottom:2px solid transparent}nav a:hover,nav a.on{color:var(--ink);border-color:var(--hi)}
+#th{background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;width:36px;height:36px;cursor:pointer}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:8px;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:500;border:1px solid var(--ink);cursor:pointer;font-size:.95rem;font-family:var(--s);transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(16,33,63,.18)}.btn.alt{background:none;color:var(--ink);border-color:var(--line)}
+.hero{padding:72px 0 30px;position:relative}.badge{display:inline-flex;gap:8px;align-items:center;font:500 .76rem var(--m);color:var(--acc);border:1px solid var(--line);background:var(--card);border-radius:99px;padding:6px 14px}.badge i{width:7px;height:7px;border-radius:50%;background:var(--acc);animation:pu 1.6s infinite}@keyframes pu{50%{opacity:.25}}
+h1{font-size:clamp(2.8rem,9vw,5.6rem);font-weight:800;letter-spacing:-.03em;margin:20px 0 12px}h1 span{color:var(--acc)}
+.role{font-size:1.15rem;color:var(--acc);font-weight:500;margin:0}.sum{font-size:1.2rem;color:var(--mute);max-width:36em;margin:14px 0 0}
+.track{margin:34px 0 6px;border:1px solid var(--line);border-radius:16px;background:var(--card);overflow:hidden}#hc{display:block;width:100%;height:150px}
+.cap{font-size:.84rem;color:var(--mute);margin:0}.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+section{padding:72px 0;border-top:1px solid var(--line)}h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:26px}h2 small{display:block;font:500 .74rem var(--m);color:var(--hi);letter-spacing:.14em;margin-bottom:10px}
+.lead{max-width:42em;margin:0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:32px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;transition:transform .25s,border-color .25s,box-shadow .25s}.card:hover{transform:translateY(-4px);border-color:var(--acc);box-shadow:0 14px 30px rgba(16,33,63,.1)}
+.card h3{font-size:1.1rem;padding-top:12px;border-top:3px solid var(--acc)}.card p{margin:8px 0 0;color:var(--mute);font-size:.95rem}.card:nth-child(2) h3{border-color:var(--hi)}
+.feature{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--hi);border-radius:14px;padding:32px}.thesis{font:700 clamp(1.25rem,3vw,1.6rem)/1.35 var(--d);margin:0 0 14px}
+.steps{list-style:none;margin:34px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:22px;position:relative}
+.steps li{position:relative;padding-top:6px}.steps li::before{content:attr(data-n);display:flex;width:36px;height:36px;border-radius:50%;background:var(--acc);color:var(--bg);align-items:center;justify-content:center;font:500 .82rem var(--m);margin-bottom:12px;position:relative;z-index:1}
+.steps li::after{content:"";position:absolute;top:24px;left:36px;right:-22px;height:2px;background:linear-gradient(90deg,var(--acc),var(--line))}.steps li:last-child::after{display:none}
+.steps b{display:block;font:700 1.05rem var(--d)}.steps span{color:var(--mute);font-size:.93rem}
+.job{display:grid;grid-template-columns:190px 1fr;gap:26px;padding:28px;margin-bottom:20px}.job:hover{transform:none}.where{color:var(--mute);font-size:.92rem}.where b{display:block;color:var(--acc);font:500 .78rem var(--m);margin-bottom:6px}
+.job h3{font-size:1.3rem;border:0;padding:0;margin-bottom:12px}.job ul{margin:0;padding-left:20px}.job li{margin-bottom:8px;max-width:46em}
+.sk ul{list-style:none;margin:12px 0 0;padding:0;color:var(--mute);font-size:.95rem}.sk li{padding:7px 0;border-top:1px solid var(--line)}.sk li:first-child{border:0}.sk h3{font-size:1.1rem}
+.sk li::before{content:"▸ ";color:var(--hi)}
+.cta{background:linear-gradient(135deg,var(--ink),#16406b);color:#f4f7fa;border-radius:20px;padding:40px;border:0}.cta .lead{color:#c9d4e8;margin-bottom:22px}.cta a.big{display:block;color:#fff;font:500 1.2rem var(--s);text-decoration:none;margin-bottom:8px;word-break:break-word}.cta a.big:hover{color:#7ee8dd}.cta .cap{color:#9fb0cc;margin-top:12px}
+footer{padding:28px 0 60px;color:var(--mute);font-size:.85rem;border-top:1px solid var(--line)}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.rv.v{opacity:1;transform:none}
+#film{position:fixed;inset:0;z-index:200;background:#060c1a;color:#fff;display:none;align-items:center;justify-content:center;text-align:center;transition:opacity .9s}#film.on{display:flex}#film.out{opacity:0;pointer-events:none}
+#film::before,#film::after{content:"";position:absolute;left:0;right:0;height:10vh;background:#000;z-index:3}#film::before{top:0}#film::after{bottom:0}
+#fc{position:absolute;inset:0;width:100%;height:100%;opacity:.6}
+.sc{position:relative;z-index:2;padding:0 24px;animation:in 1s cubic-bezier(.2,.8,.2,1) both}@keyframes in{from{opacity:0;transform:scale(1.08);filter:blur(12px)}to{opacity:1;transform:none;filter:none}}
+.sc h2{font:800 clamp(2.3rem,8vw,5.6rem)/1.02 var(--d);letter-spacing:-.03em;margin:0}.sc em{font-style:normal;color:#4fd1c5}.sc em.o{color:#fb923c}
+.sc p{font:500 .85rem var(--m);color:#a9b8d4;margin:18px 0 0;letter-spacing:.1em;text-transform:uppercase;opacity:0;animation:p2 .8s .6s both}.sc p+p{animation-delay:1.1s}
+@keyframes p2{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.mu span:last-child{opacity:0;animation:p2 .7s 1.1s both}.sw i{font-style:normal;display:inline-block;animation:p2 .6s both}.sw i:nth-child(2){animation-delay:.5s}.sw i:nth-child(3){animation-delay:1s}.sw i:nth-child(4){animation-delay:1.5s}
+#pb{position:absolute;left:0;bottom:10vh;height:3px;width:0;z-index:4;background:linear-gradient(90deg,#4fd1c5,#fb923c);transition:width .8s}
+#cnt{position:absolute;left:18px;bottom:calc(11.5vh + env(safe-area-inset-bottom,0px));z-index:5;font:.72rem var(--m);color:#8fa0c0}
+#skip{position:absolute;right:18px;bottom:calc(11.5vh + env(safe-area-inset-bottom,0px));z-index:5;font:.74rem var(--m);color:#fff;background:#ffffff18;border:1px solid #ffffff44;border-radius:99px;padding:8px 14px;cursor:pointer}
+@media(max-width:700px){.job{grid-template-columns:1fr;gap:8px}.steps li::after{display:none}.cta{padding:28px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.sc p,.mu span:last-child,.sw i{opacity:1;transform:none}html{scroll-behavior:auto}}
+.sv .n{font:500 .74rem var(--m);color:var(--hi);display:block}
+.sv h3{margin-top:8px}
+h1 span{background:linear-gradient(100deg,var(--acc),#8b5cff 55%,var(--hi));-webkit-background-clip:text;background-clip:text;color:transparent}
+.tl{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.tl span{font:500 .78rem var(--m);padding:8px 14px;border-radius:99px;border:1px solid var(--line);background:var(--card);transition:transform .2s,border-color .2s}.tl span:hover{transform:translateY(-3px) rotate(-1.5deg);border-color:var(--hi)}
+.mq{overflow:hidden;border-block:1px solid var(--line);padding:14px 0;margin:34px -22px 0;transform:rotate(-1.4deg);background:var(--card)}.mq div{display:flex;gap:36px;width:max-content;animation:mq 32s linear infinite;font:800 1.4rem var(--d);white-space:nowrap}.mq span:nth-child(even){color:var(--hi)}@keyframes mq{to{transform:translateX(-50%)}}
+.chain{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin:26px 0;padding:22px;border:1px solid var(--line);border-radius:18px;background:var(--card)}
+.chain i{width:11px;height:11px;border-radius:50%;background:var(--line)}
+.chain button{width:44px;height:44px;border-radius:12px;border:2px solid var(--acc);background:none;color:var(--acc);font:700 1rem var(--m);cursor:pointer;transition:transform .2s,background .25s,color .25s;animation:wob 2.4s ease-in-out infinite}
+.chain button:nth-of-type(2n){animation-delay:.6s}@keyframes wob{50%{transform:translateY(-5px)}}
+.chain button.m{background:var(--hi);border-color:var(--hi);color:#fff;transform:scale(1.15);animation:none}.chain button:hover{transform:scale(1.15)}
+#pl{font:700 clamp(1.1rem,3vw,1.45rem)/1.35 var(--d);min-height:3.4em;max-width:34em}.chain+.btns{margin:0 0 14px}
+#cf{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:150}
+#ts{position:fixed;left:50%;bottom:calc(28px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);background:var(--ink);color:var(--bg);padding:10px 20px;border-radius:99px;font:500 .85rem var(--m);opacity:0;transition:.35s;z-index:160;pointer-events:none}#ts.on{opacity:1;transform:translate(-50%,0)}
+</style></head><body>
+<div id="pg"></div><canvas id="cf"></canvas><div id="ts" role="status"></div>
+<div id="film"><canvas id="fc"></canvas><div class="sc" id="sc"></div><div id="pb"></div><div id="cnt"></div><button id="skip">Skip intro ▸▸</button></div>
+<header><div class="wrap"><a class="brand" href="#top">Muhammad Hasnat</a><nav id="nl"><a href="#about">About</a><a href="#research">Research</a><a href="#play">Play</a><a href="#experience">Experience</a><a href="#services">Services</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav><button id="th" aria-label="Toggle theme">◐</button></div></header>
+<main id="top" class="wrap">
+<div class="hero">
+<span class="badge"><i></i>Open to research, PhD and industry roles</span>
+<h1>Muhammad <span>Hasnat</span></h1>
+<p class="role">Computational Bioinformatician · Structural Biology · Cancer Genomics</p>
+<p class="sum">I model how single amino acid changes alter protein behavior, then check the results at the bench.</p>
+<div class="tl"><span>🧬 V→M substitutions in ZNF668</span><span>💻 GROMACS · Vina · MM-GBSA</span><span>🧪 qPCR · dPCR · Sanger</span><span>🎓 Open to research, PhD & industry roles</span></div>
+<div class="track"><canvas id="hc" role="img" aria-label="Animated illustration of a protein sequence with several valine residues replaced by methionine"></canvas></div>
+<p class="cap">Residue track: orange marks are valine-to-methionine substitutions (schematic, not to scale).</p>
+<div class="btns"><a class="btn" href="mailto:mhasnat2234@gmail.com">Email me</a><a class="btn alt" href="https://www.linkedin.com/in/muhammad-hasnat-691977422" target="_blank" rel="noopener">View LinkedIn</a><button class="btn alt" id="rp">▶ Replay intro</button></div>
+</div>
+
+<div class="mq"><div id="mq"></div></div>
+<section id="about"><h2 class="rv"><small>01 / ABOUT</small>About</h2>
+<p class="lead rv">I'm a detail-driven bioinformatics researcher with a foundation in computational structural biology and cancer genomics. I apply molecular dynamics, docking and free-energy calculations to characterize pathogenic protein variants, and I turn wet-lab genomic data into findings that matter for disease.</p>
+<div class="grid">
+<div class="card rv"><h3>Computational modeling</h3><p>Molecular dynamics, docking and free-energy calculations to characterize protein variants.</p></div>
+<div class="card rv"><h3>Experimental validation</h3><p>qPCR, digital PCR and Sanger sequencing to confirm computational predictions.</p></div>
+<div class="card rv"><h3>Reproducible research</h3><p>Multi-tool analysis where each method is checked against the others.</p></div></div></section>
+
+<section id="research"><h2 class="rv"><small>02 / RESEARCH</small>Research focus</h2>
+<div class="feature rv"><p class="thesis">Position-Dependent Divergence in Pathogenic Outcomes: Comprehensive Multi-Tool Analysis of Valine-to-Methionine Substitutions in ZNF668</p>
+<p class="lead">My BS thesis asks whether the same substitution causes different harm depending on where it sits in the protein.</p>
+<ol class="steps">
+<li data-n="01"><b>Simulate</b><span>GROMACS molecular dynamics to assess conformational stability at each variant position.</span></li>
+<li data-n="02"><b>Dock</b><span>AutoDock Vina to predict binding affinity for each variant.</span></li>
+<li data-n="03"><b>Score</b><span>MM-GBSA free-energy changes to compare variants.</span></li>
+<li data-n="04"><b>Validate</b><span>qPCR, digital PCR and Sanger sequencing to confirm predictions in the lab.</span></li></ol></div></section>
+
+<section id="play"><h2 class="rv"><small>TRY IT ↓</small>Mutate the chain</h2>
+<p class="lead rv">This is the idea behind my thesis: the same valine-to-methionine swap, but at different sites along the protein. Tap the glowing V residues to swap them (schematic, not to scale).</p>
+<div class="chain rv" id="ch" role="group" aria-label="Interactive residue track"></div>
+<div class="btns"><button class="btn" id="ma">Mutate all</button><button class="btn alt" id="rs">Reset</button></div>
+<p id="pl" aria-live="polite"></p></section>
+
+<section id="experience"><h2 class="rv"><small>03 / EXPERIENCE</small>Experience</h2>
+<div class="card job rv"><div class="where"><b>RESEARCH ASSISTANT</b>GCUF Laboratory<br>Faisalabad</div><div><h3>Research Assistant, ZNF668 Mutation Analysis</h3><ul>
+<li>Led a computational analysis of valine-to-methionine (V→M) substitutions at multiple positions within the ZNF668 protein.</li>
+<li>Ran GROMACS molecular dynamics simulations to assess conformational stability across variant positions.</li>
+<li>Conducted AutoDock Vina docking studies for binding-affinity prediction and calculated MM-GBSA free-energy changes.</li>
+<li>Identified position-dependent pathogenic effects on protein function and drug interactions, informing variant prioritization.</li></ul></div></div>
+<div class="card job rv"><div class="where"><b>RESEARCH ASSISTANT</b>GCUF Laboratory<br>Faisalabad</div><div><h3>Research Assistant, Cancer Genomics and Wet Lab</h3><ul>
+<li>Conducted real-time qPCR and digital PCR experiments to support cancer genome analysis.</li>
+<li>Performed Sanger sequencing and mutation validation to confirm computational predictions.</li>
+<li>Integrated experimental findings with computational modeling to characterize genetic variants.</li></ul></div></div></section>
+
+<section id="services"><h2 class="rv"><small>04 / SERVICES</small>Services</h2>
+<p class="lead rv">Computational and experimental support for protein-variant and cancer-genomics projects, with each computational method checked against the others and confirmed at the bench where possible.</p>
+<div class="grid"><div class="card sv rv"><span class="n">01</span><h3>Molecular dynamics simulation</h3><p>GROMACS simulations to assess the conformational stability of protein variants across different residue positions.</p></div><div class="card sv rv"><span class="n">02</span><h3>Molecular docking</h3><p>AutoDock Vina docking studies to predict binding affinity for each protein variant and its drug interactions.</p></div><div class="card sv rv"><span class="n">03</span><h3>MM-GBSA free-energy analysis</h3><p>MM-GBSA free-energy change calculations to compare variants side by side.</p></div><div class="card sv rv"><span class="n">04</span><h3>Pathogenic variant characterization</h3><p>Position-dependent analysis of how a substitution affects protein function, used to prioritize variants.</p></div><div class="card sv rv"><span class="n">05</span><h3>Protein modeling & visualization</h3><p>Structural modeling and visualization of protein variants in PyMOL.</p></div><div class="card sv rv"><span class="n">06</span><h3>RNA-seq data analysis</h3><p>Analysis of RNA-seq data to support cancer genomics and disease-focused findings.</p></div><div class="card sv rv"><span class="n">07</span><h3>qPCR & digital PCR experiments</h3><p>Real-time qPCR and digital PCR to support cancer genome analysis.</p></div><div class="card sv rv"><span class="n">08</span><h3>Sanger sequencing & mutation validation</h3><p>Sanger sequencing and mutation validation to confirm computational predictions in the lab.</p></div><div class="card sv rv"><span class="n">09</span><h3>Machine learning for bioinformatics</h3><p>Random Forest and SVM models applied to bioinformatics problems.</p></div><div class="card sv rv"><span class="n">10</span><h3>Virtual screening & ADMET profiling</h3><p>Virtual screening and ADMET profiling to shortlist and assess candidate compounds.</p></div></div>
+<div class="btns"><a class="btn" href="mailto:mhasnat2234@gmail.com?subject=Service%20enquiry">Enquire about a service</a></div></section>
+
+<section id="skills"><h2 class="rv"><small>05 / SKILLS</small>Skills</h2><div class="grid">
+<div class="card sk rv"><h3>Structural biology</h3><ul><li>Molecular dynamics (GROMACS)</li><li>Molecular docking (AutoDock Vina)</li><li>Protein modeling (PyMOL)</li><li>MM-GBSA free energy</li></ul></div>
+<div class="card sk rv"><h3>Genomics and lab</h3><ul><li>Pathogenic variant characterization</li><li>RNA-seq data analysis</li><li>qPCR and digital PCR</li><li>Sanger sequencing</li></ul></div>
+<div class="card sk rv"><h3>Data and AI</h3><ul><li>Machine learning (Random Forest, SVM)</li><li>Virtual screening and ADMET profiling</li><li>Generative AI and prompt engineering</li></ul></div></div></section>
+
+<section id="contact"><div class="card cta rv"><h2 style="color:#fff"><small>06 / CONTACT</small>Contact</h2>
+<p class="lead">Open to research, PhD and industry opportunities in computational biology and cancer genomics.</p>
+<a class="big" href="mailto:mhasnat2234@gmail.com">mhasnat2234@gmail.com</a><a class="big" href="tel:+923467223580">+92 346 7223580</a><a class="big" href="https://www.linkedin.com/in/muhammad-hasnat-691977422" target="_blank" rel="noopener">linkedin.com/in/muhammad-hasnat-691977422</a><button class="btn alt" id="cp" style="color:#fff;border-color:#ffffff55;margin:6px 0 4px">Copy email ✨</button><p class="cap">Faisalabad, Pakistan</p></div></section>
+<footer><div class="wrap" style="padding:0"><span>© 2026 Muhammad Hasnat</span><a href="#top">Back to top ↑</a></div></footer>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+function chain(cv,film){const x=cv.getContext('2d'),hi=[6,15,22,31,38];let W=0,H=0;
+const rs=()=>{const r=cv.getBoundingClientRect(),d=devicePixelRatio||1;cv.width=r.width*d;cv.height=r.height*d;x.setTransform(d,0,0,d,0,0);W=r.width;H=r.height};addEventListener('resize',rs);
+(function f(t){if(!cv.getClientRects().length){return requestAnimationFrame(f)}if(!W)rs();
+const cs=getComputedStyle(document.documentElement),g=k=>cs.getPropertyValue(k).trim(),P=film?{l:'#26365a',n:'#5b6f96',a:'#4fd1c5',h:'#fb923c',b:'#060c1a'}:{l:g('--line'),n:g('--mute'),a:g('--acc'),h:g('--hi'),b:g('--card')};
+x.clearRect(0,0,W,H);const n=39,amp=H*(film?.16:.2),pts=[];for(let i=0;i<n;i++)pts.push([24+i*(W-48)/(n-1),H/2+Math.sin(i*.9+t/900)*amp]);
+x.strokeStyle=P.l;x.lineWidth=2;x.beginPath();pts.forEach((p,i)=>x[i?'lineTo':'moveTo'](p[0],p[1]));x.stroke();
+pts.forEach((p,i)=>{const k=hi.indexOf(i);if(k<0){x.fillStyle=P.n;x.beginPath();x.arc(p[0],p[1],film?5:4,0,7);x.fill();return}
+const ph=(t/1000+k*.7)%4,m=ph>2,r=(film?13:11)+(m?Math.sin(t/200)*1.5:0);x.fillStyle=m?P.h:P.a;x.globalAlpha=.18;x.beginPath();x.arc(p[0],p[1],r+7,0,7);x.fill();x.globalAlpha=1;x.beginPath();x.arc(p[0],p[1],r,0,7);x.fill();
+x.fillStyle=P.b;x.font='500 '+(film?13:11)+'px IBM Plex Mono,monospace';x.textAlign='center';x.textBaseline='middle';x.fillText(m?'M':'V',p[0],p[1]+1)});
+requestAnimationFrame(f)})(0)}
+chain($('hc'));chain($('fc'),1);
+const io=new IntersectionObserver(e=>e.forEach(z=>z.isIntersecting&&z.target.classList.add('v')),{threshold:.12});document.querySelectorAll('.rv').forEach(x=>io.observe(x));
+addEventListener('scroll',()=>$('pg').style.width=scrollY/(document.documentElement.scrollHeight-innerHeight)*100+'%');
+const sio=new IntersectionObserver(e=>e.forEach(z=>{if(z.isIntersecting)document.querySelectorAll('#nl a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+z.target.id))}),{rootMargin:'-45% 0px -50% 0px'});document.querySelectorAll('section').forEach(x=>sio.observe(x));
+$('th').onclick=()=>{const d=document.documentElement,dk=d.dataset.theme?d.dataset.theme=='dark':matchMedia('(prefers-color-scheme:dark)').matches;d.dataset.theme=dk?'light':'dark'};
+const F=$('film'),sc=$('sc');let tm,si;
+const S=[['<h2>One residue.</h2><p>Single amino acid changes alter protein behavior</p>',3000],
+['<h2 class="mu"><span>Valine</span> <em>→</em> <span><em class="o">Methionine</em></span></h2><p>Same substitution · different positions in ZNF668</p><p>Position-dependent pathogenic outcomes</p>',3800],
+['<h2 class="sw"><i>Simulate.</i> <i><em>Dock.</em></i> <i>Score.</i> <i><em class="o">Validate.</em></i></h2><p>GROMACS · AutoDock Vina · MM-GBSA</p><p>qPCR · digital PCR · Sanger sequencing</p>',4000],
+['<h2><em>Services</em></h2><p>Molecular dynamics · Docking · MM-GBSA · Variant analysis</p><p>RNA-seq · qPCR / dPCR · Sanger · ML · ADMET</p>',3800],
+['<h2>Muhammad<br><em>Hasnat</em></h2><p>Computational Bioinformatician</p><p>Structural Biology · Cancer Genomics</p>',3600]];
+function step(){if(si>=S.length)return end();sc.className='sc';void sc.offsetWidth;sc.innerHTML=S[si][0];$('pb').style.width=(si+1)/S.length*100+'%';$('cnt').textContent='0'+(si+1)+' / 0'+S.length;tm=setTimeout(step,S[si++][1])}
+function end(){clearTimeout(tm);F.classList.add('out');document.body.style.overflow='';setTimeout(()=>F.classList.remove('on','out'),900)}
+function play(){si=0;$('pb').style.width=0;F.classList.remove('out');F.classList.add('on');document.body.style.overflow='hidden';scrollTo(0,0);step()}
+$('skip').onclick=end;$('rp').onclick=play;
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches)play();
+
+// gen z layer
+const T=['Multi-omics','GROMACS','AutoDock Vina','MM-GBSA','qPCR','Sanger','ZNF668','V→M','RNA-seq','Random Forest','SVM','ADMET','PyMOL'];
+$('mq').innerHTML=[1,2].map(_=>T.map(x=>`<span>${x} ✦</span>`).join('')).join('');
+const hiP=[6,15,22,31,38],ch=$('ch'),pl=$('pl');
+ch.innerHTML=Array.from({length:39},(_,i)=>hiP.includes(i)?`<button data-i="${i}" aria-pressed="false" aria-label="Site ${hiP.indexOf(i)+1}: valine">V</button>`:'<i></i>').join('');
+const bs=[...ch.querySelectorAll('button')];
+const say=()=>{const k=bs.filter(b=>b.classList.contains('m')).length;pl.textContent=k==0?'Tap a glowing V to turn it into M 👆':k<5?`${k}/5 swapped. Same change, different site in the chain.`:'All 5 swapped 🎉 The real question: does the same substitution cause different harm depending on where it sits?'};
+const tg=(b,on)=>{b.classList.toggle('m',on);b.textContent=on?'M':'V';b.setAttribute('aria-pressed',on)};
+bs.forEach(b=>b.onclick=()=>{tg(b,!b.classList.contains('m'));say();if(bs.every(x=>x.classList.contains('m')))boom()});
+$('ma').onclick=()=>{bs.forEach(b=>tg(b,1));say();boom()};$('rs').onclick=()=>{bs.forEach(b=>tg(b,0));say()};say();
+function boom(){const c=$('cf'),x=c.getContext('2d');c.width=innerWidth;c.height=innerHeight;const C=['#4fd1c5','#fb923c','#8b5cff','#ffd166','#ff5d8f'],P=Array.from({length:110},()=>({x:innerWidth/2,y:innerHeight*.6,vx:(Math.random()-.5)*16,vy:-Math.random()*16-4,c:C[Math.random()*5|0],r:Math.random()*6+3,a:1}));
+(function f(){x.clearRect(0,0,c.width,c.height);let al=0;P.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.vy+=.4;p.a-=.011;if(p.a>0){al=1;x.globalAlpha=p.a;x.fillStyle=p.c;x.fillRect(p.x,p.y,p.r,p.r*1.6)}});x.globalAlpha=1;if(al)requestAnimationFrame(f);else x.clearRect(0,0,c.width,c.height)})()}
+const toast=m=>{const t=$('ts');t.textContent=m;t.classList.add('on');setTimeout(()=>t.classList.remove('on'),1800)};
+$('cp').onclick=()=>{const e='mhasnat2234@gmail.com';(navigator.clipboard?navigator.clipboard.writeText(e):Promise.reject()).then(()=>toast('Email copied ✨'),()=>toast(e))};
+</script></body></html>
